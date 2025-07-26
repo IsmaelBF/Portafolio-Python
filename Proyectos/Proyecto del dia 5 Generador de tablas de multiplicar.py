@@ -16,3 +16,4 @@ while True:
     if opcion != 1:
         break
     funcion_global()
+

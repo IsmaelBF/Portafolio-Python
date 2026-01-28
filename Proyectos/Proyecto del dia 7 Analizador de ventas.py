@@ -17,6 +17,8 @@ print(df_global_tienda.isnull().sum())
 #transformar las fechas a datetime
 df_global_tienda['Fecha']= pd.to_datetime(df_global_tienda['Fecha'])
 print(df_global_tienda)
+print('este es el tipo de dato de df')
+print(type(df_global_tienda['Fecha']))
 
 
 #producto mas vendido

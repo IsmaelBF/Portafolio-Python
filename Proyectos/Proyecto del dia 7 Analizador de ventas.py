@@ -1,8 +1,8 @@
 import pandas as pd 
-df_tienda1 =  pd.read_csv(r'Datos_Ventas_Tienda.csv')
+df_tienda1 =  pd.read_csv(r'C:\Curso de python\Portafolio-Python\Proyectos\Datos_Ventas_Tienda.csv')
 print(df_tienda1)
 
-df_tienda2 = pd.read_csv(r'Datos_Ventas_Tienda2.csv')
+df_tienda2 = pd.read_csv(r'C:\Curso de python\Portafolio-Python\Proyectos\Datos_Ventas_Tienda2.csv')
 print(df_tienda2)
 
 df_global_tienda = pd.concat([df_tienda1,df_tienda2],ignore_index=True)
@@ -47,4 +47,4 @@ ventas_por_categoria = df_global_tienda.groupby('Producto')['Total Venta'].sum()
 print('\nVentas por categoria',ventas_por_categoria)
 
 # guardar dataframe en la pc 
-df_global_tienda.to_csv(r'C:\Users\Ryzen5\Documents\Portafolio-Python\Proyectos\Dataframe de tienda.csv')
+df_global_tienda.to_csv(r'C:\Curso de python\Portafolio-Python\Proyectos\Dataframe de tienda.csv')
